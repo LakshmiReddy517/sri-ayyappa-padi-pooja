@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sri Ayyappa Swamy Padi Pooja · Sunday, 6 December 2026</title>
+<meta name="description" content="With the divine blessings of Lord Sri Ayyappa, you and your family are cordially invited to the Sri Ayyappa Swamy Padi Pooja on Sunday, 6th December 2026 at Legend Residency, Old Bowenpally, Secunderabad.">
+<meta property="og:title" content="Sri Ayyappa Swamy Padi Pooja · 6 Dec 2026">
+<meta property="og:description" content="Swamiye Saranam Ayyappa! You and your family are cordially invited. Alpaharam at 10:00 PM.">
+<meta property="og:image" content="Sri%20Ayyappa%20Padi%20Pooja%20Invitation.png">
+<meta name="theme-color" content="#0b0806">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪔</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Tiro+Telugu&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gold:#f3c86b; --gold-2:#ffe6a6; --gold-3:#b8862f; --deep:#0b0806;
+    --maroon:#5a0f12; --ink:#f7ecd6; --muted:#cdb98f;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    background:radial-gradient(ellipse at 50% 0%, #2a1a0c 0%, #120c07 45%, #070504 100%) fixed;
+    color:var(--ink); font-family:"Cormorant Garamond", Georgia, serif; font-size:19px;
+    line-height:1.5; overflow-x:hidden; -webkit-font-smoothing:antialiased;
+  }
+  body.locked{overflow:hidden}
+  .te{font-family:"Tiro Telugu", "Noto Sans Telugu", serif}
+  .cinzel{font-family:"Cinzel", serif}
+
+  /* ---------------- SPLASH ---------------- */
+  #splash{
+    position:fixed; inset:0; z-index:50; display:flex; flex-direction:column;
+    align-items:center; justify-content:center; gap:10px;
+    background:radial-gradient(circle at 50% 42%, #1d1309 0%, #0a0705 60%, #030202 100%);
+    transition:opacity 1.4s ease, visibility 1.4s;
+  }
+  #splash.gone{opacity:0; visibility:hidden}
+  #stars{position:absolute; inset:0; width:100%; height:100%}
+  #deity{width:min(78vw, 46vh, 420px); height:auto; position:relative; z-index:2; overflow:visible}
+  #deity .ln{fill:none; stroke:var(--gold); stroke-width:2; stroke-linecap:round; stroke-linejoin:round;
+    filter:drop-shadow(0 0 3px rgba(255,200,100,.65))}
+  #deity .thin{stroke-width:1.2; opacity:.85}
+  #deity .fillable{fill:rgba(243,200,107,0); transition:fill 1.6s ease}
+  #deity.lit .fillable{fill:rgba(243,200,107,.14)}
+  #deity .flame{fill:#ffcf5a; opacity:0; transform-box:fill-box; transform-origin:50% 100%;
+    filter:drop-shadow(0 0 8px #ffb53a) drop-shadow(0 0 18px #ff8a1a)}
+  #deity.lit .flame{opacity:1; animation:flicker 1.6s ease-in-out infinite alternate}
+  #deity .halo-glow{opacity:0; transition:opacity 2s ease}
+  #deity.lit .halo-glow{opacity:1}
+  #deity.lit .rays{animation:spin 60s linear infinite; transform-origin:200px 160px}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  @keyframes flicker{
+    0%{transform:scale(1,1) skewX(0)} 30%{transform:scale(.92,1.08) skewX(2deg)}
+    60%{transform:scale(1.05,.95) skewX(-2deg)} 100%{transform:scale(.97,1.05) skewX(1deg)}
+  }
+  .splash-text{position:relative; z-index:2; text-align:center; opacity:0; transform:translateY(12px);
+    transition:all 1.2s ease}
+  .splash-text.show{opacity:1; transform:none}
+  .splash-text .te{color:var(--gold-2); font-size:clamp(18px,4.6vw,26px); text-shadow:0 0 18px rgba(255,190,90,.6)}
+  .splash-text .cinzel{color:var(--gold); letter-spacing:.32em; font-size:clamp(11px,2.8vw,14px); margin-top:4px}
+  #enter{
+    position:relative; z-index:2; margin-top:14px; opacity:0; pointer-events:none;
+    font:700 13px "Cinzel",serif; letter-spacing:.28em; color:#2b1404; cursor:pointer;
+    padding:14px 30px; border-radius:40px; border:1px solid #ffe7a8;
+    background:linear-gradient(180deg,#ffe7a3,#e8b452 55%,#b98228);
+    box-shadow:0 0 0 4px rgba(243,200,107,.12), 0 0 30px rgba(255,180,70,.45);
+    transition:opacity 1s ease, transform .2s;
+  }
+  #enter.show{opacity:1; pointer-events:auto; animation:pulse 2.4s ease-in-out infinite}
+  #enter:active{transform:scale(.96)}
+  @keyframes pulse{50%{box-shadow:0 0 0 10px rgba(243,200,107,.05), 0 0 46px rgba(255,180,70,.7)}}
+  #skip{position:absolute; right:16px; bottom:calc(16px + env(safe-area-inset-bottom)); z-index:3;
+    background:none; border:0; color:#8d7a58; font:600 12px "Cinzel",serif; letter-spacing:.2em; cursor:pointer}
+
+  /* ---------------- PAGE ---------------- */
+  #petals{position:fixed; inset:0; pointer-events:none; z-index:5}
+  main{position:relative; z-index:2; max-width:620px; margin:0 auto; padding:0 0 60px}
+  /* crop the poster to the Lord + 18 steps (approx. x 180–900, y 0–545 of 1086×1448) */
+  .hero{position:relative; aspect-ratio:720/545; overflow:hidden}
+  .hero img{position:absolute; top:0; left:-25%; width:151%; height:auto; transform-origin:50% 20%;
+    transform:scale(1.08); animation:kenburns 18s ease-out forwards}
+  @keyframes kenburns{to{transform:scale(1)}}
+  .hero::after{content:""; position:absolute; inset:0;
+    background:linear-gradient(180deg, rgba(7,5,4,.15) 0%, rgba(7,5,4,0) 30%, rgba(7,5,4,.35) 62%, #0b0806 100%)}
+  .hero-cap{position:absolute; left:0; right:0; bottom:10px; z-index:2; text-align:center; padding:0 18px}
+  .hero-cap .te{font-size:clamp(19px,5vw,26px); color:var(--gold-2); text-shadow:0 2px 14px #000}
+  .scroll-hint{display:block; margin:10px auto 0; width:22px; height:34px; border:1.5px solid var(--gold);
+    border-radius:12px; position:relative; opacity:.8}
+  .scroll-hint::after{content:""; position:absolute; left:50%; top:7px; width:3px; height:7px; margin-left:-1.5px;
+    background:var(--gold); border-radius:2px; animation:wheel 1.8s infinite}
+  @keyframes wheel{to{transform:translateY(12px); opacity:0}}
+
+  section{padding:34px 22px; text-align:center}
+  .reveal{opacity:0; transform:translateY(26px); transition:opacity 1s ease, transform 1s ease}
+  .reveal.in{opacity:1; transform:none}
+
+  .divider{display:flex; align-items:center; justify-content:center; gap:12px; margin:18px auto; color:var(--gold)}
+  .divider::before,.divider::after{content:""; height:1px; width:min(28vw,150px);
+    background:linear-gradient(90deg, transparent, var(--gold), transparent)}
+  .divider span{font-size:18px}
+
+  h1{font-family:"Cinzel",serif; font-weight:900; line-height:1.08; letter-spacing:.02em;
+    font-size:clamp(34px,9vw,56px);
+    background:linear-gradient(180deg,#fff3cc 0%,#f3c86b 45%,#b07b26 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    filter:drop-shadow(0 3px 10px rgba(0,0,0,.7)) drop-shadow(0 0 20px rgba(243,170,70,.25))}
+  h1 small{display:block; font-size:.56em; letter-spacing:.06em; font-weight:700}
+  h2{font-family:"Cinzel",serif; color:var(--gold); font-size:clamp(17px,4.4vw,22px); letter-spacing:.18em; font-weight:700}
+  .lead{font-size:clamp(18px,4.6vw,21px); color:var(--ink); margin-top:16px}
+  .lead em{color:var(--gold-2); font-style:normal; font-weight:600}
+
+  .gold-card{
+    position:relative; margin:8px auto 0; padding:26px 20px; max-width:520px; border-radius:18px;
+    background:linear-gradient(180deg, rgba(60,36,12,.55), rgba(20,12,6,.75));
+    border:1px solid rgba(243,200,107,.45);
+    box-shadow:inset 0 0 0 6px rgba(243,200,107,.06), 0 14px 40px rgba(0,0,0,.55), 0 0 40px rgba(243,170,70,.08);
+  }
+  .gold-card::before,.gold-card::after{content:"❖"; position:absolute; top:-12px; left:50%; transform:translateX(-50%);
+    color:var(--gold); background:#140d07; padding:0 10px; font-size:16px}
+  .gold-card::after{top:auto; bottom:-12px}
+
+  .date-plaque{
+    display:inline-block; padding:16px 28px; border-radius:12px; margin-top:6px;
+    background:linear-gradient(180deg,#ffeab0 0%,#e9b85a 50%,#b6832c 100%);
+    color:#3a0c0c; font-family:"Cinzel",serif; font-weight:900; font-size:clamp(20px,5.8vw,30px);
+    box-shadow:0 6px 24px rgba(255,180,70,.25), inset 0 1px 0 #fff6d6;
+  }
+  .date-plaque sup{font-size:.55em}
+  .te-date{margin-top:10px; color:var(--muted); font-size:18px}
+
+  .countdown{display:flex; justify-content:center; gap:10px; margin-top:22px}
+  .countdown div{min-width:66px; padding:10px 6px; border-radius:12px; border:1px solid rgba(243,200,107,.35);
+    background:rgba(0,0,0,.35)}
+  .countdown b{display:block; font-family:"Cinzel",serif; font-size:26px; color:var(--gold-2)}
+  .countdown span{font-family:"Cinzel",serif; font-size:10px; letter-spacing:.2em; color:var(--muted)}
+
+  .timeline{list-style:none; text-align:left; max-width:440px; margin:20px auto 0; position:relative}
+  .timeline::before{content:""; position:absolute; left:19px; top:8px; bottom:8px; width:1px;
+    background:linear-gradient(180deg,transparent,var(--gold),transparent)}
+  .timeline li{position:relative; padding:10px 0 14px 54px}
+  .timeline li .dot{position:absolute; left:6px; top:10px; width:28px; height:28px; border-radius:50%;
+    display:grid; place-items:center; background:#1c1208; border:1px solid var(--gold); font-size:14px}
+  .timeline h3{font-family:"Cinzel",serif; font-size:17px; color:var(--gold-2); letter-spacing:.06em}
+  .timeline p{color:var(--muted); font-size:17px}
+  .timeline .time{display:inline-block; margin-top:4px; padding:2px 12px; border-radius:20px;
+    background:linear-gradient(180deg,#ffe7a3,#d9a446); color:#3a0c0c; font:700 13px "Cinzel",serif; letter-spacing:.08em}
+  .timeline li.hl h3{font-size:19px}
+
+  /* 18 steps */
+  .steps-wrap{margin:22px auto 0; max-width:480px; perspective:900px}
+  .stair{display:flex; flex-direction:column-reverse; align-items:center; gap:3px}
+  .step{
+    --w:100%; width:var(--w); height:26px; border-radius:4px; cursor:pointer; position:relative;
+    display:flex; align-items:center; justify-content:space-between; padding:0 12px;
+    font:600 12px "Cinzel",serif; letter-spacing:.06em; color:#6d5a3c;
+    background:linear-gradient(180deg,#2a1d10,#1a1209); border:1px solid rgba(243,200,107,.18);
+    transition:all .7s ease; transform:rotateX(8deg);
+  }
+  .step .n{opacity:.7}
+  .step.on{color:#3a0c0c; border-color:#ffe2a0;
+    background:linear-gradient(180deg,#ffe7a8,#e3ab4c 60%,#a8741f);
+    box-shadow:0 0 18px rgba(255,180,70,.45)}
+  .step.on::before,.step.on::after{content:""; position:absolute; top:-9px; width:6px; height:11px; border-radius:50% 50% 45% 45%;
+    background:radial-gradient(circle at 50% 70%, #fff7c0, #ffb12e 60%, #ff6a00);
+    box-shadow:0 0 10px #ffa22e; animation:flicker 1.2s ease-in-out infinite alternate}
+  .step.on::before{left:6px} .step.on::after{right:6px}
+  .step.sel{outline:2px solid #fff3c8; outline-offset:2px}
+  .step-info{min-height:84px; margin-top:18px; padding:14px 16px; border-radius:12px;
+    background:rgba(0,0,0,.35); border:1px dashed rgba(243,200,107,.35)}
+  .step-info b{font-family:"Cinzel",serif; color:var(--gold-2); letter-spacing:.06em}
+  .step-info p{color:var(--muted); font-size:17px}
+  .legend{display:flex; flex-wrap:wrap; justify-content:center; gap:8px 14px; margin-top:14px; font-size:15px; color:var(--muted)}
+  .legend i{display:inline-block; width:10px; height:10px; border-radius:2px; margin-right:6px; vertical-align:middle}
+  .note{font-size:14px; color:#8e7c5b; margin-top:10px; font-style:italic}
+
+  .venue-name{font-family:"Cinzel",serif; font-weight:900; font-size:clamp(24px,6.4vw,32px); color:var(--gold-2); margin-top:6px}
+  .addr{color:var(--ink); margin-top:8px; font-size:19px}
+  .flat{display:inline-block; margin-top:14px; padding:8px 22px; border-radius:30px; border:1px solid var(--gold);
+    font:700 16px "Cinzel",serif; letter-spacing:.12em; color:var(--gold-2); background:rgba(243,200,107,.07)}
+  .contacts{display:flex; flex-wrap:wrap; justify-content:center; gap:10px 14px; margin-top:18px}
+  .contact{display:inline-flex; align-items:center; gap:9px; text-decoration:none; padding:10px 18px; border-radius:30px;
+    border:1px solid rgba(243,200,107,.5); background:rgba(0,0,0,.3);
+    font:700 16px "Cormorant Garamond",serif; letter-spacing:.02em; color:var(--gold-2); transition:transform .15s}
+  .contact svg{width:17px; height:17px; color:var(--gold); flex:none}
+  .contact:active{transform:scale(.97)}
+
+  .btns{display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:480px; margin:22px auto 0}
+  .btn{display:flex; align-items:center; justify-content:center; gap:8px; padding:14px 10px; border-radius:12px;
+    text-decoration:none; cursor:pointer; font:700 12.5px "Cinzel",serif; letter-spacing:.1em;
+    color:#2b1404; border:1px solid #ffe7a8; background:linear-gradient(180deg,#ffe7a3,#e2ad4e 60%,#b98228);
+    box-shadow:0 6px 18px rgba(0,0,0,.4); transition:transform .15s}
+  .btn.ghost{color:var(--gold-2); background:rgba(243,200,107,.06); border-color:rgba(243,200,107,.5)}
+  .btn.wide{grid-column:1 / -1}
+  .btn:active{transform:scale(.97)}
+  .btn svg{width:18px; height:18px}
+
+  .closing{font-style:italic; font-size:21px; color:var(--ink)}
+  .mantra{display:inline-block; margin-top:20px; padding:14px 26px; border-radius:12px;
+    background:linear-gradient(180deg,#ffeab0,#e3ad4f 55%,#a9751f); color:#3a0c0c;
+    font:900 clamp(16px,4.6vw,22px) "Cinzel",serif; letter-spacing:.06em; box-shadow:0 0 30px rgba(255,180,70,.25)}
+  footer{text-align:center; color:#6f6048; font-size:14px; padding:10px 20px 30px}
+
+  #bell{position:fixed; right:14px; bottom:calc(14px + env(safe-area-inset-bottom)); z-index:20; width:50px; height:50px;
+    border-radius:50%; border:1px solid var(--gold); background:rgba(20,12,6,.8); color:var(--gold);
+    display:grid; place-items:center; cursor:pointer; box-shadow:0 0 20px rgba(243,170,70,.25);
+    opacity:0; transition:opacity 1s}
+  #bell.show{opacity:1}
+  #bell svg{width:24px; height:24px; transform-origin:50% 10%}
+  #bell.ring svg{animation:ring .9s ease}
+  @keyframes ring{20%{transform:rotate(18deg)}40%{transform:rotate(-14deg)}60%{transform:rotate(9deg)}80%{transform:rotate(-4deg)}}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none!important; transition:none!important}
+  }
+</style>
+</head>
+<body class="locked">
+
+<!-- ================= SPLASH: drawing of Lord Ayyappa ================= -->
+<div id="splash" aria-label="Opening animation">
+  <canvas id="stars"></canvas>
+
+  <svg id="deity" viewBox="0 0 400 520" role="img" aria-label="Line drawing of Lord Ayyappa seated above the eighteen holy steps">
+    <defs>
+      <radialGradient id="haloG" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#ffd27a" stop-opacity=".55"/>
+        <stop offset="60%" stop-color="#ff9e2c" stop-opacity=".15"/>
+        <stop offset="100%" stop-color="#ff9e2c" stop-opacity="0"/>
+      </radialGradient>
+    </defs>
+
+    <circle class="halo-glow" cx="200" cy="160" r="150" fill="url(#haloG)"/>
+
+    <!-- Prabhavali (halo) -->
+    <circle class="ln" cx="200" cy="160" r="122"/>
+    <circle class="ln thin" cx="200" cy="160" r="108"/>
+    <g class="rays" id="rays"></g>
+
+    <!-- Kireedam (crown) -->
+    <path class="ln fillable" d="M176 116 L180 96 L174 92 L184 72 L179 68 L191 48 L200 26 L209 48 L221 68 L216 72 L226 92 L220 96 L224 116 Z"/>
+    <path class="ln thin" d="M180 96 L220 96 M184 72 L216 72 M191 48 L209 48"/>
+    <circle class="ln thin" cx="200" cy="84" r="5"/>
+    <circle class="ln thin" cx="200" cy="20" r="4"/>
+
+    <!-- Face -->
+    <path class="ln fillable" d="M178 118 Q176 150 190 164 Q200 172 210 164 Q224 150 222 118 Z"/>
+    <path class="ln thin" d="M174 132 q-6 4 -2 14 M226 132 q6 4 2 14"/>
+    <path class="ln thin" d="M187 134 q5 -3 9 0 M204 134 q5 -3 9 0"/>
+    <path class="ln thin" d="M200 122 L200 130"/>
+    <path class="ln thin" d="M195 154 q5 4 10 0"/>
+
+    <!-- Neck, shoulders, torso -->
+    <path class="ln" d="M192 166 L192 178 M208 166 L208 178"/>
+    <path class="ln fillable" d="M192 178 Q158 180 146 198 Q136 214 138 242 M208 178 Q242 180 254 198 Q264 214 262 242"/>
+    <path class="ln" d="M160 206 Q158 246 166 286 M240 206 Q242 246 234 286"/>
+
+    <!-- Necklaces & garland -->
+    <path class="ln thin" d="M184 180 Q200 200 216 180"/>
+    <path class="ln thin" d="M178 182 Q200 214 222 182"/>
+    <path class="ln" id="garland" d="M170 184 Q176 262 200 268 Q224 262 230 184"/>
+    <g id="beads"></g>
+
+    <!-- Right hand raised in Chin Mudra at the chest -->
+    <path class="ln" d="M138 242 Q140 262 156 254 L170 228"/>
+    <path class="ln fillable" d="M164 232 Q160 212 168 204 Q176 198 182 208 Q184 222 176 234 Z"/>
+    <path class="ln thin" d="M168 206 L166 196 M173 203 L172 192 M178 204 L179 194"/>
+    <!-- Left hand resting over the knee -->
+    <path class="ln" d="M262 242 Q272 272 290 298"/>
+    <path class="ln fillable" d="M284 296 Q296 292 300 302 Q298 312 288 310 Z"/>
+
+    <!-- Seated legs in Yogasana with Yogapatta band -->
+    <path class="ln fillable" d="M166 286 Q122 280 110 306 Q114 332 160 330 L240 330 Q286 332 290 306 Q278 280 234 286"/>
+    <path class="ln" d="M118 300 Q200 320 282 300"/>
+    <path class="ln" d="M116 312 Q200 334 284 312"/>
+    <path class="ln thin" d="M170 300 Q200 288 230 300"/>
+
+    <!-- Peetham (seat) -->
+    <path class="ln" d="M96 332 L304 332 L312 346 L88 346 Z"/>
+
+    <!-- 18 holy steps (generated) -->
+    <g id="stepsSvg"></g>
+
+    <!-- Nilavilakku lamps -->
+    <g id="lampL">
+      <path class="ln" d="M44 500 L76 500 M50 500 Q60 488 60 470 L60 380 M70 500 Q60 488 60 470"/>
+      <path class="ln" d="M40 380 Q60 396 80 380 Z"/>
+      <path class="ln thin" d="M52 440 L68 440 M50 410 L70 410"/>
+      <path class="flame" d="M60 352 Q70 366 60 378 Q50 366 60 352 Z"/>
+    </g>
+    <g id="lampR">
+      <path class="ln" d="M324 500 L356 500 M330 500 Q340 488 340 470 L340 380 M350 500 Q340 488 340 470"/>
+      <path class="ln" d="M320 380 Q340 396 360 380 Z"/>
+      <path class="ln thin" d="M332 440 L348 440 M330 410 L350 410"/>
+      <path class="flame" d="M340 352 Q350 366 340 378 Q330 366 340 352 Z"/>
+    </g>
+    <!-- Bell -->
+    <path class="ln thin" d="M352 20 L352 60"/>
+    <path class="ln" d="M340 84 Q340 60 352 60 Q364 60 364 84 Z"/>
+  </svg>
+
+  <div class="splash-text" id="splashText">
+    <div class="te">॥ స్వామియే శరణం అయ్యప్ప ॥</div>
+    <div class="cinzel">SWAMIYE SARANAM AYYAPPA</div>
+  </div>
+  <button id="enter" type="button">OPEN INVITATION</button>
+  <button id="skip" type="button">SKIP ›</button>
+</div>
+
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<!-- ================= INVITATION ================= -->
+<main id="main">
+  <div class="hero">
+    <img src="Sri%20Ayyappa%20Padi%20Pooja%20Invitation.png" alt="" onerror="this.closest('.hero').remove()">
+  </div>
+
+  <section class="reveal">
+    <h1>Sri Ayyappa Swamy<small>Padi Pooja</small></h1>
+    <div class="divider"><span>✦</span></div>
+    <p class="lead">With the divine blessings of <em>Lord Sri Ayyappa</em>,<br>
+      we cordially invite you and your family<br>to grace the auspicious occasion of<br>
+      <em>Sri Ayyappa Swamy Padi Pooja</em>.</p>
+  </section>
+
+  <section class="reveal">
+    <div class="gold-card">
+      <h2>ON THE SACRED DAY</h2>
+      <div class="date-plaque">SUNDAY, 6<sup>TH</sup> DECEMBER 2026</div>
+      <div class="te te-date">ఆదివారం, 6 డిసెంబర్ 2026</div>
+      <div class="countdown" id="countdown" aria-live="polite">
+        <div><b id="cd-d">--</b><span>DAYS</span></div>
+        <div><b id="cd-h">--</b><span>HOURS</span></div>
+        <div><b id="cd-m">--</b><span>MINS</span></div>
+        <div><b id="cd-s">--</b><span>SECS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <h2>ORDER OF WORSHIP</h2>
+    <div class="divider"><span>🪔</span></div>
+    <ul class="timeline">
+      <li class="hl">
+        <span class="dot">🪔</span>
+        <h3>Padi Pooja &amp; Deeparadhana</h3>
+        <p>Lamps, flowers and offerings placed on each of the eighteen holy steps as mantras are chanted.</p>
+        <span class="time">EVENING · 7:00 PM</span>
+      </li>
+      <li>
+        <span class="dot">🎶</span>
+        <h3>Ayyappa Bhajans</h3>
+        <p>Devotional songs and the call of “Swamiye Saranam Ayyappa”.</p>
+      </li>
+      <li>
+        <span class="dot">🌙</span>
+        <h3>Harivarasanam &amp; Mangala Aarti</h3>
+        <p>The beloved lullaby hymn that lays the Lord to rest, followed by aarti.</p>
+      </li>
+      <li class="hl">
+        <span class="dot">🍃</span>
+        <h3>Alpaharam <span class="te" style="font-size:16px">(అల్పాహారం)</span></h3>
+        <p>Prasadam and refreshments for all devotees</p>
+        <span class="time">NIGHT · 10:00 PM</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="reveal">
+    <h2>THE EIGHTEEN HOLY STEPS</h2>
+    <div class="divider"><span>✦</span></div>
+    <p class="lead" style="font-size:18px">The <em>Pathinettam Padi</em> lead to Lord Ayyappa’s sanctum at Sabarimala.
+      In Padi Pooja, each step is worshipped as a stage the devotee rises above on the way to the Lord.
+      <br><span style="color:var(--muted)">Tap a step to light it.</span></p>
+    <div class="steps-wrap">
+      <div class="stair" id="stair"></div>
+      <div class="step-info" id="stepInfo"><b>Step 1</b><p>Tap any step to read its meaning.</p></div>
+      <div class="legend">
+        <span><i style="background:#f3c86b"></i>1–5 · Five senses</span>
+        <span><i style="background:#e39a4c"></i>6–13 · Eight passions</span>
+        <span><i style="background:#c8743a"></i>14–16 · Three gunas</span>
+        <span><i style="background:#fff3c8"></i>17–18 · Knowledge &amp; ignorance</span>
+      </div>
+      <p class="note">One traditional interpretation. Others link the steps to Ayyappa’s eighteen weapons or the eighteen hills around Sabarimala.</p>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <div class="gold-card">
+      <h2>VENUE</h2>
+      <div class="venue-name">LEGEND RESIDENCY</div>
+      <p class="addr">8-7-58, Tirumala Colony, Krushi Residency,<br>HAL Colony, Old Bowenpally,<br>Secunderabad, Telangana – 500011</p>
+      <div class="flat">FLAT NO. 203</div>
+      <div class="contacts">
+        <a class="contact" href="tel:+919885711469">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1l-2.23 2.2z"/></svg>
+          +91 98857 11469</a>
+        <a class="contact" href="tel:+917396654727">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1l-2.23 2.2z"/></svg>
+          +91 73966 54727</a>
+      </div>
+    </div>
+    <div class="btns">
+      <a class="btn" id="mapBtn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>DIRECTIONS</a>
+      <button class="btn" id="calBtn" type="button">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 2v2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2V2h-2v2H9V2H7zm-2 8h14v10H5V10z"/></svg>SAVE DATE</button>
+      <a class="btn ghost" id="waBtn" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2.1 1-2.4c.3-.3.6-.3.8-.3h.6c.2 0 .4 0 .6.5l.9 2.1c.1.2.1.4 0 .6l-.4.6-.4.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.6-.1l.9-1.1c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.6.3.1.2.1.7-.1 1.3z"/></svg>SHARE</a>
+      <a class="btn ghost" href="Sri%20Ayyappa%20Padi%20Pooja%20Invitation.png" download>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11 3h2v10l3.5-3.5 1.4 1.4L12 16.8l-5.9-5.9 1.4-1.4L11 13V3zM4 18h16v2H4z"/></svg>CARD</a>
+    </div>
+  </section>
+
+  <section class="reveal">
+    <p class="closing">Your gracious presence will make this occasion<br>blessed and memorable.</p>
+    <div class="mantra">SWAMIYE SARANAM AYYAPPA</div>
+    <div class="te" style="margin-top:12px;color:var(--gold-2);font-size:20px">స్వామియే శరణం అయ్యప్ప</div>
+  </section>
+
+  <footer>Legend Residency · Flat 203 · Old Bowenpally, Secunderabad</footer>
+</main>
+
+<button id="bell" type="button" aria-label="Ring the temple bell">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a1 1 0 0 1 1 1v1.1A6 6 0 0 1 18 10v4l2 3H4l2-3v-4a6 6 0 0 1 5-5.9V3a1 1 0 0 1 1-1zm-2 17h4a2 2 0 0 1-4 0z"/></svg>
+</button>
+
+<script>
+(() => {
+  const NS = "http://www.w3.org/2000/svg";
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const $ = s => document.querySelector(s);
+
+  /* ---------- Generate halo rays, garland beads, 18 steps in the SVG ---------- */
+  const mk = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag);
+    for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; };
+
+  const rays = $("#rays");
+  for (let i = 0; i < 48; i++) {
+    const a = i / 48 * Math.PI * 2, r1 = 124, r2 = i % 2 ? 136 : 146;
+    mk("line", { class: "ln thin", x1: 200 + Math.cos(a) * r1, y1: 160 + Math.sin(a) * r1,
+      x2: 200 + Math.cos(a) * r2, y2: 160 + Math.sin(a) * r2 }, rays);
+  }
+  const garland = $("#garland"), beads = $("#beads"), gl = garland.getTotalLength();
+  for (let i = 1; i < 16; i++) {
+    const p = garland.getPointAtLength(gl * i / 16);
+    mk("circle", { class: "ln thin fillable", cx: p.x, cy: p.y, r: 3.2 }, beads);
+  }
+  const stepsSvg = $("#stepsSvg");
+  const top = 350, h = 8.4;
+  for (let i = 0; i < 18; i++) {
+    const y = top + i * h, hw = 58 + i * 5.2;
+    mk("path", { class: "ln thin", d: `M${200 - hw} ${y} L${200 + hw} ${y} L${200 + hw + 2.6} ${y + h} ` }, stepsSvg);
+  }
+  mk("path", { class: "ln", d: `M142 350 L${200 - 58 - 17 * 5.2 - 4} ${top + 18 * h}` }, stepsSvg);
+  mk("path", { class: "ln", d: `M258 350 L${200 + 58 + 17 * 5.2 + 4} ${top + 18 * h}` }, stepsSvg);
+  mk("path", { class: "ln", d: `M196 350 L196 ${top + 18 * h} M204 350 L204 ${top + 18 * h}` }, stepsSvg).style.opacity = .5;
+
+  /* ---------- Starfield + rising embers on splash ---------- */
+  const sc = $("#stars"), sx = sc.getContext("2d");
+  let stars = [], embers = [], splashRunning = true;
+  function sizeStars() {
+    sc.width = innerWidth * devicePixelRatio; sc.height = innerHeight * devicePixelRatio;
+    stars = Array.from({ length: 140 }, () => ({ x: Math.random() * sc.width, y: Math.random() * sc.height * .7,
+      r: Math.random() * 1.3 * devicePixelRatio, t: Math.random() * 6 }));
+  }
+  sizeStars(); addEventListener("resize", sizeStars);
+  (function starLoop(t) {
+    if (!splashRunning) return;
+    sx.clearRect(0, 0, sc.width, sc.height);
+    for (const s of stars) { sx.globalAlpha = .35 + .35 * Math.sin(t / 900 + s.t);
+      sx.fillStyle = "#ffeec5"; sx.beginPath(); sx.arc(s.x, s.y, s.r, 0, 7); sx.fill(); }
+    if (embers.length < 50 && Math.random() < .25) embers.push({ x: Math.random() * sc.width, y: sc.height + 10,
+      v: (.4 + Math.random() * .9) * devicePixelRatio, r: (1 + Math.random() * 2) * devicePixelRatio, w: Math.random() * 6 });
+    for (const e of embers) { e.y -= e.v; e.x += Math.sin(e.y / 60 + e.w) * .4;
+      sx.globalAlpha = Math.max(0, e.y / sc.height) * .9; sx.fillStyle = "#ffb54a";
+      sx.shadowColor = "#ff9020"; sx.shadowBlur = 8; sx.beginPath(); sx.arc(e.x, e.y, e.r, 0, 7); sx.fill(); sx.shadowBlur = 0; }
+    embers = embers.filter(e => e.y > -10);
+    requestAnimationFrame(starLoop);
+  })(0);
+
+  /* ---------- Draw the Lord, stroke by stroke ---------- */
+  const deity = $("#deity");
+  const lines = [...deity.querySelectorAll(".ln")];
+  const total = 6200; // ms for whole drawing
+  lines.forEach((el, i) => {
+    const L = Math.ceil(el.getTotalLength ? el.getTotalLength() : 300) + 2;
+    el.style.strokeDasharray = L; el.style.strokeDashoffset = reduce ? 0 : L;
+    if (!reduce) {
+      const delay = (i / lines.length) * (total - 1400);
+      const dur = Math.min(1600, 300 + L * 3);
+      el.animate([{ strokeDashoffset: L }, { strokeDashoffset: 0 }],
+        { duration: dur, delay, easing: "cubic-bezier(.6,.05,.3,1)", fill: "forwards" });
+    }
+  });
+  const finishDraw = () => {
+    deity.classList.add("lit");
+    $("#splashText").classList.add("show");
+    setTimeout(() => $("#enter").classList.add("show"), 900);
+  };
+  setTimeout(finishDraw, reduce ? 100 : total);
+
+  /* ---------- Temple bell (Web Audio, no files needed) ---------- */
+  let ac;
+  function bell() {
+    try {
+      ac = ac || new (window.AudioContext || window.webkitAudioContext)();
+      const now = ac.currentTime, master = ac.createGain();
+      master.gain.value = .5; master.connect(ac.destination);
+      [[520, 1, 4.5], [1046, .5, 3.2], [1388, .35, 2.4], [1820, .22, 1.8], [2730, .12, 1.1], [3510, .06, .8]]
+        .forEach(([f, a, d]) => {
+          const o = ac.createOscillator(), g = ac.createGain();
+          o.type = "sine"; o.frequency.value = f * (1 + (Math.random() - .5) * .004);
+          g.gain.setValueAtTime(0, now); g.gain.linearRampToValueAtTime(a * .35, now + .008);
+          g.gain.exponentialRampToValueAtTime(.0001, now + d);
+          o.connect(g).connect(master); o.start(now); o.stop(now + d + .1);
+        });
+    } catch (e) {}
+    const b = $("#bell"); b.classList.remove("ring"); void b.offsetWidth; b.classList.add("ring");
+  }
+  $("#bell").addEventListener("click", bell);
+
+  /* ---------- Enter invitation ---------- */
+  function enter(withBell) {
+    if (withBell) bell();
+    $("#splash").classList.add("gone");
+    document.body.classList.remove("locked");
+    $("#bell").classList.add("show");
+    setTimeout(() => { splashRunning = false; $("#splash").remove(); }, 1500);
+    startPetals();
+  }
+  $("#enter").addEventListener("click", () => enter(true));
+  $("#skip").addEventListener("click", () => enter(false));
+
+  /* ---------- Falling petals (marigold & jasmine) ---------- */
+  function startPetals() {
+    if (reduce) return;
+    const c = $("#petals"), x = c.getContext("2d");
+    const size = () => { c.width = innerWidth * devicePixelRatio; c.height = innerHeight * devicePixelRatio; };
+    size(); addEventListener("resize", size);
+    const cols = ["#ffb21e", "#ff8c12", "#fff6e0", "#c4182b", "#ffd24a"];
+    const P = Array.from({ length: 26 }, () => spawn(true));
+    function spawn(any) { return { x: Math.random() * c.width, y: any ? Math.random() * c.height : -20,
+      s: (4 + Math.random() * 6) * devicePixelRatio, v: (.4 + Math.random() * .8) * devicePixelRatio,
+      a: Math.random() * 6, va: (Math.random() - .5) * .04, c: cols[Math.random() * cols.length | 0], w: Math.random() * 9 }; }
+    (function loop() {
+      x.clearRect(0, 0, c.width, c.height);
+      for (let i = 0; i < P.length; i++) { const p = P[i];
+        p.y += p.v; p.x += Math.sin(p.y / 80 + p.w) * .6; p.a += p.va;
+        x.save(); x.translate(p.x, p.y); x.rotate(p.a); x.globalAlpha = .75; x.fillStyle = p.c;
+        x.beginPath(); x.ellipse(0, 0, p.s, p.s * .55, 0, 0, 7); x.fill(); x.restore();
+        if (p.y > c.height + 20) P[i] = spawn(false); }
+      requestAnimationFrame(loop);
+    })();
+  }
+
+  /* ---------- Countdown to Sunday 6 Dec 2026 (IST) ---------- */
+  const target = new Date("2026-12-06T18:00:00+05:30").getTime();
+  const pad = n => String(n).padStart(2, "0");
+  function tick() {
+    let d = Math.max(0, target - Date.now()) / 1000;
+    if (d === 0) { $("#countdown").innerHTML = '<div style="padding:10px 18px"><b style="font-size:18px">TODAY · SWAMIYE SARANAM</b></div>'; return; }
+    $("#cd-d").textContent = Math.floor(d / 86400); d %= 86400;
+    $("#cd-h").textContent = pad(Math.floor(d / 3600)); d %= 3600;
+    $("#cd-m").textContent = pad(Math.floor(d / 60));
+    $("#cd-s").textContent = pad(Math.floor(d % 60));
+    setTimeout(tick, 1000);
+  }
+  tick();
+
+  /* ---------- The 18 steps ---------- */
+  const meanings = [
+    ["Sight", "Kannu — the eye", 0], ["Hearing", "Kaathu — the ear", 0], ["Smell", "Mookku — the nose", 0],
+    ["Taste", "Naakku — the tongue", 0], ["Touch", "Thvakku — the skin", 0],
+    ["Kama", "Desire", 1], ["Krodha", "Anger", 1], ["Lobha", "Greed", 1], ["Moha", "Delusion & attachment", 1],
+    ["Mada", "Pride", 1], ["Matsarya", "Jealousy", 1], ["Asooya", "Envy at another’s good", 1], ["Dambha", "Vanity & boasting", 1],
+    ["Sattva", "Purity and calm", 2], ["Rajas", "Restless activity", 2], ["Tamas", "Inertia and darkness", 2],
+    ["Vidya", "Knowledge", 3], ["Avidya", "Ignorance — crossed at last to reach the Lord", 3]
+  ];
+  const groups = ["The five senses (Panchendriya)", "The eight passions (Ashtaraga)", "The three gunas (Trigunas)", "Knowledge and ignorance"];
+  const stair = $("#stair"), info = $("#stepInfo"), stepEls = [];
+  meanings.forEach(([n, d, g], i) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.className = "step"; b.style.setProperty("--w", (100 - i * 3) + "%");
+    b.innerHTML = `<span class="n">${i + 1}</span><span>${n.toUpperCase()}</span><span class="n">${i + 1}</span>`;
+    b.addEventListener("click", () => {
+      stepEls.forEach((s, j) => { s.classList.toggle("on", j <= i); s.classList.remove("sel"); });
+      b.classList.add("sel");
+      info.innerHTML = `<b>Step ${i + 1} · ${n}</b><p>${d}<br><span style="font-size:15px">${groups[g]}</span></p>`;
+      if (i === 17) { info.innerHTML += `<p style="color:var(--gold-2);margin-top:6px">Beyond the eighteenth step — <b>Tat Tvam Asi</b>, “That thou art”.</p>`; bell(); }
+    });
+    stair.appendChild(b); stepEls.push(b);
+  });
+  // Light the steps one-by-one when the section scrolls into view
+  let litOnce = false;
+  new IntersectionObserver((es, o) => es.forEach(e => {
+    if (e.isIntersecting && !litOnce) { litOnce = true; o.disconnect();
+      stepEls.forEach((s, i) => setTimeout(() => s.classList.add("on"), 140 * i));
+    }
+  }), { threshold: .5 }).observe(stair);
+
+  /* ---------- Reveal on scroll ---------- */
+  const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .15 });
+  document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+  /* ---------- Links: Maps, WhatsApp, Calendar ---------- */
+  const address = "Legend Residency, 8-7-58, Tirumala Colony, Krushi Residency, HAL Colony, Old Bowenpally, Secunderabad, Telangana 500011";
+  $("#mapBtn").href = "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(address);
+  const shareText = `🪔 Swamiye Saranam Ayyappa 🪔\n\nYou and your family are cordially invited to\n*Sri Ayyappa Swamy Padi Pooja*\n\n📅 Sunday, 6th December 2026\n🍃 Alpaharam: 10:00 PM\n📍 Legend Residency, Flat No. 203\n8-7-58, Tirumala Colony, Krushi Residency, HAL Colony, Old Bowenpally, Secunderabad – 500011\n📞 +91 98857 11469  /  +91 73966 54727\n\n${location.protocol.startsWith("http") ? location.href.split("#")[0] : ""}`;
+  $("#waBtn").href = "https://wa.me/?text=" + encodeURIComponent(shareText.trim());
+  $("#calBtn").addEventListener("click", () => {
+    const ics = [
+      "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//Ayyappa Padi Pooja//EN", "BEGIN:VEVENT",
+      "UID:ayyappa-padi-pooja-20261206@invite", "DTSTAMP:20261123T000000Z",
+      "DTSTART:20261206T133000Z", "DTEND:20261206T170000Z",
+      "SUMMARY:Sri Ayyappa Swamy Padi Pooja",
+      "DESCRIPTION:Swamiye Saranam Ayyappa! Pooja begins at 7:00 PM. Padi Pooja\\, Bhajans and Harivarasanam. Alpaharam at 10:00 PM.",
+      "LOCATION:Legend Residency\\, Flat No. 203\\, 8-7-58\\, Tirumala Colony\\, Krushi Residency\\, HAL Colony\\, Old Bowenpally\\, Secunderabad\\, Telangana 500011",
+      "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+    const a = document.createElement("a");
+    a.href = URL.createObjectURL(new Blob([ics], { type: "text/calendar" }));
+    a.download = "Ayyappa-Padi-Pooja-6-Dec-2026.ics"; a.click();
+  });
+})();
+</script>
+</body>
+</html>
