@@ -71,13 +71,12 @@
   /* ---------------- PAGE ---------------- */
   #petals{position:fixed; inset:0; pointer-events:none; z-index:5}
   main{position:relative; z-index:2; max-width:620px; margin:0 auto; padding:0 0 60px}
-  /* crop the poster to the Lord + 18 steps (approx. x 180–900, y 0–545 of 1086×1448) */
-  .hero{position:relative; aspect-ratio:720/545; overflow:hidden}
-  .hero img{position:absolute; top:0; left:-25%; width:151%; height:auto; transform-origin:50% 20%;
-    transform:scale(1.08); animation:kenburns 18s ease-out forwards}
-  @keyframes kenburns{to{transform:scale(1)}}
-  .hero::after{content:""; position:absolute; inset:0;
-    background:linear-gradient(180deg, rgba(7,5,4,.15) 0%, rgba(7,5,4,0) 30%, rgba(7,5,4,.35) 62%, #0b0806 100%)}
+  .hero{position:relative; padding:28px 16px 2px; text-align:center}
+  .hero img{display:block; width:min(94%,560px); height:auto; margin:0 auto;
+    filter:drop-shadow(0 6px 18px rgba(0,0,0,.5)) drop-shadow(0 0 22px rgba(255,180,70,.32));
+    animation:heroIn 1.4s ease-out both}
+  @keyframes heroIn{from{opacity:0; transform:scale(.96)} to{opacity:1; transform:none}}
+  .hero::after{content:none}
   .hero-cap{position:absolute; left:0; right:0; bottom:10px; z-index:2; text-align:center; padding:0 18px}
   .hero-cap .te{font-size:clamp(19px,5vw,26px); color:var(--gold-2); text-shadow:0 2px 14px #000}
   .scroll-hint{display:block; margin:10px auto 0; width:22px; height:34px; border:1.5px solid var(--gold);
@@ -244,7 +243,7 @@
 <!-- ================= INVITATION ================= -->
 <main id="main">
   <div class="hero">
-    <img src="Sri%20Ayyappa%20Padi%20Pooja%20Invitation.png" alt="" onerror="this.closest('.hero').remove()">
+    <img src="ayyappa-deity.png" alt="Lord Ganesha, Lord Ayyappa and Lord Murugan" onerror="this.closest('.hero').remove()">
   </div>
 
   <section class="reveal">
